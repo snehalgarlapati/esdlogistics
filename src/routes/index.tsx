@@ -17,6 +17,41 @@ export const Route = createFileRoute("/")({
         content:
           "Efficient logistics, superior service, dependable delivery. Air, ocean and road freight from Hyderabad, Telangana.",
       },
+      { property: "og:url", content: "https://esdlogistics.lovable.app/" },
+    ],
+    links: [{ rel: "canonical", href: "https://esdlogistics.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          additionalType: "https://schema.org/MovingCompany",
+          name: "ESD Logistics",
+          description:
+            "Air, ocean and road cargo services from Hyderabad, Telangana, including door-to-door pickup, customs documentation and delivery.",
+          url: "https://esdlogistics.lovable.app/",
+          email: "esdlogistics2024@gmail.com",
+          telephone: "+919100825137",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Building No. 29-1085, Neredmet, Vinayak Nagar",
+            addressLocality: "Hyderabad",
+            addressRegion: "Telangana",
+            postalCode: "500056",
+            addressCountry: "IN",
+          },
+          areaServed: "IN",
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Cargo services",
+            itemListElement: ["Air Cargo", "Ocean Cargo", "Road Cargo"].map((s) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: s },
+            })),
+          },
+        }),
+      },
     ],
   }),
   component: Index,

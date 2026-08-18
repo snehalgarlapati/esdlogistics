@@ -77,11 +77,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "ESD Logistics — Air, Ocean & Road Cargo" },
+      {
+        name: "description",
+        content:
+          "ESD Logistics handles air, ocean and road freight from Hyderabad, Telangana — door-to-door pickup, customs documentation and dependable delivery.",
+      },
+      { name: "author", content: "ESD Logistics" },
+      { property: "og:title", content: "ESD Logistics — Air, Ocean & Road Cargo" },
+      {
+        property: "og:description",
+        content:
+          "Efficient logistics, superior service, dependable delivery. Air, ocean and road freight from Hyderabad, Telangana.",
+      },
+      { property: "og:site_name", content: "ESD Logistics" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
