@@ -36,9 +36,9 @@ export const Route = createFileRoute("/")({
         content:
           "Efficient logistics, superior service, dependable delivery. Air, ocean and road freight from Hyderabad, Telangana.",
       },
-      { property: "og:url", content: "https://esdlogistics.lovable.app/" },
+      { property: "og:url", content: "https://esd-logistics.netlify.app/" },
     ],
-    links: [{ rel: "canonical", href: "https://esdlogistics.lovable.app/" }],
+   links: [{ rel: "canonical", href: "https://esd-logistics.netlify.app/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -49,7 +49,7 @@ export const Route = createFileRoute("/")({
           name: "ESD Logistics",
           description:
             "Air, ocean and road cargo services from Hyderabad, Telangana, including door-to-door pickup, customs documentation and delivery.",
-          url: "https://esdlogistics.lovable.app/",
+         url: "https://esd-logistics.netlify.app/",
           email: "esdlogistics2024@gmail.com",
           telephone: "+919100825137",
           address: {
